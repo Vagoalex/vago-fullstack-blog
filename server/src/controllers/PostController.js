@@ -124,7 +124,7 @@ export const update = async (req, res) => {
 		);
 
 		res.json({
-			message: "Статья обновлена"
+			message: "Статья успешно обновлена"
 		});
 	} catch (err) {
 		console.log(err);
