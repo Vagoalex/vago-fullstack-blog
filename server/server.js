@@ -24,6 +24,7 @@ app.get("/posts", PostController.getAll);
 app.get("/posts/:id", PostController.getOne);
 app.post("/posts", checkAuth, postCreateValidation, PostController.create);
 app.delete("/posts/:id", PostController.remove);
+
 // app.patch("/posts/:id", PostController.update);
 
 app.listen(PORT, (err) => {
